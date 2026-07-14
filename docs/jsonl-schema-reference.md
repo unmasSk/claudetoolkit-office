@@ -146,4 +146,4 @@ Para **nombrar cada personaje** en pantalla, por orden de fiabilidad:
 ## 10. Implicaciones para nuestro visualizador vs agent-flow
 
 - **agent-flow** (proyecto de referencia, Apache 2.0, en `_study/`) usa un patrón inferior: nombra a los agentes por `description` (frase libre de la tarea) en vez de por su identidad real (`subagent_type` / `attributionAgent`), e ignora `isSidechain`, `parentAgentId`, `spawnDepth`, `usage`, `attributionAgent`. **Nuestro parser debe apoyarse en los campos de identidad reales, no copiar su heurística.**
-- Doble fuente de eventos (decisión ya tomada): (a) este JSONL para el movimiento, (b) hooks propios de unmassk para la semántica de dominio. Existe ya un hook `~/.pixel-agents/hooks/claude-hook.js` en la máquina — pendiente de revisar por si es un intento anterior reutilizable.
+- Doble fuente de eventos (decisión ya tomada): (a) este JSONL para el movimiento, (b) hooks propios de unmassk para la semántica de dominio.
